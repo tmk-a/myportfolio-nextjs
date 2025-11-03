@@ -1,26 +1,94 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Custom color palette */
+  --color-copper: #a8763e;
+  --color-copper-100: #22180c;
+  --color-copper-200: #432f19;
+  --color-copper-300: #654725;
+  --color-copper-400: #865f32;
+  --color-copper-500: #a8763e;
+  --color-copper-600: #c2925b;
+  --color-copper-700: #d2ad84;
+  --color-copper-800: #e1c9ad;
+  --color-copper-900: #f0e4d6;
+
+  --color-cosmic-latte: #f7f3e3;
+  --color-cosmic-latte-100: #4a3f15;
+  --color-cosmic-latte-200: #947f2a;
+  --color-cosmic-latte-300: #cdb44f;
+  --color-cosmic-latte-400: #e2d499;
+  --color-cosmic-latte-500: #f7f3e3;
+  --color-cosmic-latte-600: #f9f6e9;
+  --color-cosmic-latte-700: #faf8ee;
+  --color-cosmic-latte-800: #fcfaf4;
+  --color-cosmic-latte-900: #fdfdf9;
+
+  --color-anti-flash-white: #ecf0f1;
+  --color-anti-flash-white-100: #293437;
+  --color-anti-flash-white-200: #51696e;
+  --color-anti-flash-white-300: #7f9aa0;
+  --color-anti-flash-white-400: #b6c5c9;
+  --color-anti-flash-white-500: #ecf0f1;
+  --color-anti-flash-white-600: #f1f4f5;
+  --color-anti-flash-white-700: #f4f7f7;
+  --color-anti-flash-white-800: #f8f9fa;
+  --color-anti-flash-white-900: #fbfcfc;
+
+  --color-barn-red: #6f1a07;
+  --color-barn-red-100: #160501;
+  --color-barn-red-200: #2c0a03;
+  --color-barn-red-300: #421004;
+  --color-barn-red-400: #581506;
+  --color-barn-red-500: #6f1a07;
+  --color-barn-red-600: #b82b0c;
+  --color-barn-red-700: #f14822;
+  --color-barn-red-800: #f6856b;
+  --color-barn-red-900: #fac2b5;
+
+  --color-bistre: #2b2118;
+  --color-bistre-100: #080705;
+  --color-bistre-200: #110d0a;
+  --color-bistre-300: #19140e;
+  --color-bistre-400: #221a13;
+  --color-bistre-500: #2b2118;
+  --color-bistre-600: #634c38;
+  --color-bistre-700: #9c7858;
+  --color-bistre-800: #bfa58d;
+  --color-bistre-900: #dfd2c6;
+
+  /* Animations */
+  --animate-flicker: flicker 3s ease-in-out infinite;
+  --animate-candle-flame: candleFlame 2s ease-in-out infinite;
+  --animate-moon-glow: moonGlow 4s ease-in-out infinite;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: var(--color-bistre);
+    font-family: var(--font-cormorant), "Times New Roman", serif;
+    color: var(--color-anti-flash-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-playfair), "Georgia", serif;
+    font-weight: 700;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+}
 }
