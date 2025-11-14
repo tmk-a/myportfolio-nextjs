@@ -89,6 +89,101 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
 }
+
+/* Keyframes for animations */
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
 }
+
+@keyframes candleFlame {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    filter: blur(2px);
+  }
+  25% {
+    transform: translateY(-3px) scale(1.05);
+    filter: blur(2.5px);
+  }
+  75% {
+    transform: translateY(-1px) scale(0.98);
+    filter: blur(2.2px);
+  }
+}
+
+@keyframes moonGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 60px rgba(247, 243, 227, 0.3),
+      0 0 100px rgba(247, 243, 227, 0.2),
+      inset 0 0 40px rgba(247, 243, 227, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 80px rgba(247, 243, 227, 0.4),
+      0 0 130px rgba(247, 243, 227, 0.3),
+      inset 0 0 50px rgba(247, 243, 227, 0.15);
+  }
+}
+
+/* Textures */
+.paper-texture {
+  background-image: repeating-linear-gradient(
+      0deg,
+      rgba(247, 243, 227, 0.03) 0px,
+      transparent 1px,
+      transparent 2px,
+      rgba(247, 243, 227, 0.03) 3px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(247, 243, 227, 0.03) 0px,
+      transparent 1px,
+      transparent 2px,
+      rgba(247, 243, 227, 0.03) 3px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      transparent 0px,
+      transparent 10px,
+      rgba(168, 118, 62, 0.02) 10px,
+      rgba(168, 118, 62, 0.02) 11px
+    );
+}
+
+.leather-texture {
+  background-image: radial-gradient(
+      circle at 20% 50%,
+      rgba(168, 118, 62, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(111, 26, 7, 0.05) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 40% 20%,
+      rgba(168, 118, 62, 0.08) 0%,
+      transparent 50%
+    );
+}
+
+.bookshelf-bg {
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 35px,
+    rgba(168, 118, 62, 0.1) 35px,
+    rgba(168, 118, 62, 0.1) 38px,
+    transparent 38px,
+    transparent 180px
+  );
 }
