@@ -1,36 +1,95 @@
-This is Tamaki's portfolio!
+# 📘 Portfolio – Frontend Engineer (Tamaki)
 
-## Getting Started
+### 日本語 / English
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🏞️ Overview / 概要
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**JP:**
+このポートフォリオは、フロントエンドエンジニアとしての表現と技術力をまとめた作品集です。
+Next.js をベースに、アニメーションやインタラクションを丁寧に組み込み、
+「触れたときに静かに気持ちよく動く UI」を目指して制作しました。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**EN:**
+This portfolio showcases my work as a Frontend Engineer, combining technical skills with subtle, expressive UI design.
+Built with Next.js, it incorporates thoughtful animations and interactions to create a calm, intuitive user experience.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🎯 Purpose / 目的
 
-To learn more about Next.js, take a look at the following resources:
+**JP:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 自分の技術・設計思考・表現をひとつのプロダクトとして伝えること
+- 読み手が感覚的に「気持ちいい」と思える UI 体験を追求すること
+- どの国の方にも読みやすい構成にすること
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**EN:**
 
-## Deploy on Vercel
+- Present my technical skills, design thinking, and aesthetic approach through a single cohesive product
+- Create an experience that feels smooth, intuitive, and pleasant to interact with
+- Keep the structure accessible for viewers internationally
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠 Tech Stack / 使用技術
+
+- **Next.js (App Router)**
+- **TypeScript**
+- **React / Custom Hooks**
+- **Tailwind CSS**
+- **Framer Motion**
+- **Vercel Deployment**
+- Responsive Design / UI Animation / Component-driven Architecture
+
+---
+
+## ✨ Features / 特徴
+
+**JP:**
+
+- Framer Motion を使った静かで自然なアニメーション
+- コンポーネント分割を重視した設計
+- 余白・タイポグラフィを大切にしたミニマルな UI
+- 多言語に対応しやすい構成
+- 個々のプロジェクトに詳細な実装メモを添付
+
+**EN:**
+
+- Subtle, natural animations powered by Framer Motion
+- Component-driven architecture for clarity and scalability
+- Minimal UI with emphasis on whitespace and clean typography
+- Structure designed for easy multilingual expansion
+- Each project includes implementation notes and context
+
+---
+
+## 📂 Contents / コンテンツ
+
+**JP:**
+
+- 自作プロジェクトの一覧
+- 使用技術と役割の説明
+- 実装のポイントや工夫点
+- デザイン・設計のプロセス
+
+**EN:**
+
+- List of personal projects
+- Description of tools, skills, and responsibilities
+- Key implementation details
+- Design and architectural considerations
+
+---
+
+## 👩‍💻 About Me / 制作者について
+
+**JP:**
+フロントエンドを中心に、
+“人が迷わず触れる UI” と “静かな体験” をつくることを大切にしています。
+技術と感性のあいだをつなぐような表現を探し続けています。
+
+**EN:**
+As a frontend engineer, I value interfaces that feel natural, quiet, and effortless to interact with.
+My focus is on bridging technical implementation with subtle, expressive user experiences.
