@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/core/Footer";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -31,7 +30,6 @@ export default function RootLayout({
         className={`${playfair.variable} ${cormorant.variable} antialiased`}
       >
         {children}
-        <Footer />
       </body>
     </html>
   );
